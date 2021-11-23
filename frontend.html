@@ -9,29 +9,44 @@
 <html lang= "en">
     <!-- Content in the head is information used by Search Engines and Browsers regarding your site.-->
     <head>
-        <!-- 
-        <meta> tags are void elements/tags, meaning that they don't hold content so there is no need to have a closing </meta> tag.
-        Meta tags provide information about your site to the Search Engine (and Browser in some regards)
+        <!-- <meta> tags are void elements/tags, meaning that they don't hold content so there is no need to have a closing </meta> tag.
+            Meta tags provide information about your site to the Search Engine (and Browser in some regards).
+            It is not required, but since <meta> is self closing, it has the option to include a bashslash "/" if you want to or not.
         -->
         <!--The "charset" attribute tells the Browser what character encoding to use for the page. "utf-8" is the Unicode character set (set of characters that cover almost all writing systems in the world.)-->
-        <meta charset="utf-8">
+        <meta charset="utf-8"/>
         
         <!-- 
-        The "name" and "content" attributes often tell the Search Engine what to display on the SERP (Search Engine Result Page). 
-        In some cases, it simply provides additional meta data such as keywords, authors, viewpoint settings, etc.
-        The "name" attribute contains the name of the meta data (or category of meta data contained within the "content" attribute).
+            The "name" and "content" attributes often tell the Search Engine what to display on the SERP (Search Engine Result Page). 
+            In some cases, it simply provides additional meta data such as keywords, authors, viewpoint settings, etc.
+            The "name" attribute contains the name of the meta data (or category of meta data contained within the "content" attribute).
 
-        name="keywords" content="..." ("content" contains keywords for the Search Engine)
-        name="description" content="..." ("content" contains a description of the web page)
-        name="author" content="..." ("content" contains the author/creator of the page)
-        name="viewport" content="..." ("content" contains the viewport settings for the page - the thing that makes your webpage look good on all device aspect ratios)
-        ... (many more)
+            name="keywords" content="..." ("content" contains keywords for the Search Engine)
+            name="description" content="..." ("content" contains a description of the web page)
+            name="author" content="..." ("content" contains the author/creator of the page)
+            name="viewport" content="..." ("content" contains the viewport settings for the page - the thing that makes your webpage look good on all device aspect ratios)
+            ... (many more)
         -->
-        <meta name=""
+        <meta name="description" content="This application will act as a search engine for finding doctors within a designated proximity. It will also have filters, to narrow any search parameters.">
+        
+        <!-- <title> is the only required tag within the <head></head> tag.-->
+        <!-- The text placed within the <title></title> tag is displayed in the title bar within the Browser.-->
+        <title>Find a Doctor | Search</title> 
+        
+        <!-- The <link> tag is used to link external files with this file. 
+            As of HTML5, <link> tag must be a self closing, meaning that it does not need a closer tag much like <meta>.
+        -->
+        <!--
+            Within the <link> tag...
+            ...the "href" attribute specifies the location of the external file, URL, or general resource to be used within the current HTML file.
+            ...the "rel" attribute specifies the relationship of the linked document to the current document.
+                rel="stylesheet" (the referenced document is a stylesheet - like a .css/.html)
+                ... (many more)
+            ...the "type" attribute is NOT REQUIRED (is ""='text/css'" on default). It specifies to the Browser what type file the linked file is.
+        -->
+        <link href="frontend.css" type="text/css" rel="stylesheet"/>
+
         <!-- -->
-        <!-- -->
-        <!-- -->
-        <title>Hello World</title> 
     </head>
  
     <!-- -->
