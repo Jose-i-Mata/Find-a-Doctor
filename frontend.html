@@ -7,8 +7,9 @@
 <!-- You have to start and end an html file's contents with an opening and closing <html></html> tag (for the Browser to know where it starts and ends).-->
 <!-- The "lang=en" placed within the opening <html> tag contains the attribute "lang" which tells the Browser which language your content is in (used for search engine pages).-->
 <html lang= "en">
-    <!-- Content in the head is information used by Search Engines and Browsers regarding your site.-->
-    <head>
+
+<!-- Content in the head is information used by Search Engines and Browsers regarding your site.-->
+<head>
         <!-- <meta> tags are void elements/tags, meaning that they don't hold content so there is no need to have a closing </meta> tag.
             Meta tags provide information about your site to the Search Engine (and Browser in some regards).
             It is not required, but since <meta> is self closing, it has the option to include a bashslash "/" if you want to or not.
@@ -47,15 +48,21 @@
         <link href="frontend.css" type="text/css" rel="stylesheet"/>
 
         <!-- -->
-    </head>
+</head>
  
+<body>
     <!-- -->
-    <body> 
-        <!-- -->
-        <h1>Hello World</h1>
-        <!-- -->
-        <h2>Hello World</h2>
-        <!-- -->
-        <h3>This is actually pretty cool tho!</h3>
-    </body>
+    <div class="wrapper-title">
+        <h1>Find a Doctor</h1>
+    </div>
+
+    <div class="wrapper-search-bar">
+        <img class="search-icon" src="frontend-images/search.png"/>
+        <input class="search-bar" type="text" placeholder="Search.."/>
+        <img class="clear-x-icon" src="frontend-images/cross.png"/> 
+    </div>
+    
+
+</body>
+
 </html>
